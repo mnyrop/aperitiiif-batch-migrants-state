@@ -1,0 +1,38 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/migrants-state/A43928228_redacted_0019/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "A43928228_redacted_0019",
+  "sequences": [
+    {
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/canvas/migrants-state_A43928228_redacted_0019.json",
+          "@type": "sc:Canvas",
+          "label": "migrants-state_A43928228_redacted_0019",
+          "width": 610,
+          "height": 653,
+          "thumbnail": "https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/migrants-state_A43928228_redacted_0019/square/250,/0/default.jpg",
+          "images": [
+            {
+              "@id": "https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/annotation/migrants-state_A43928228_redacted_0019.json",
+              "@type": "oa:Annotation",
+              "on": "https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com/canvas/migrants-state_A43928228_redacted_0019.json",
+              "resource": {
+                "@id": "https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/migrants-state_A43928228_redacted_0019/full/full/0/default.jpg",
+                "@type": "dcterms:Image",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://d1b7k5w7yjwpfg.cloudfront.net/iiif/2/migrants-state_A43928228_redacted_0019"
+                },
+                "format": "image/tiff"
+              },
+              "motivation": "sc:painting"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

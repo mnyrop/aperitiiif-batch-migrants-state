@@ -23,7 +23,7 @@ data = pdfs.each_with_index do |path, i|
   parent_page_count = reader.page_count
   parent_pdf_id     = path.sub(pdf_dir, '').sub('.pdf', '')
   redacted          = parent_pdf_id.include? 'redacted'
-  a_number          = parent_pdf_id.sub('_redacted', '')
+  a_number          = parent_pdf_id.sub('_redacted', '').sub('_withdrawal', '')
 
   (0..parent_page_count - 1).each do |index|
     page_num  = index.to_s.rjust(4, "0")
@@ -36,10 +36,12 @@ data = pdfs.each_with_index do |path, i|
     
     # return if File.exist? target
 
-    img     = Vips::Image.new_from_file path, page: index
+    img     = Vips::Image.pdfload path, page: index, n: 1, dpi: 300
     img.jpegsave target
     
-    puts "wrote #{target}; page #{index} / #{parent_page_count}"
+    print "writing #{File.basename target} page #{index} / #{parent_page_count}\r"
+    $stdout.flush
   end
-  puts "finished pdf #{i} / #{pdfs_count} — #{i.to_f / pdfs_count.to_f * 100.0}% complete"
+  
+  puts "finished pdf #{i+1}/#{pdfs_count} — process is #{(i.to_f / pdfs_count.to_f * 100.0).round(1)}% complete    \n"
 end

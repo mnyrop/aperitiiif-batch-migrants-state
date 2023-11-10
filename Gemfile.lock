@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/middlicomp/aperitiiif-cli.git
-  revision: 8973b41f2de6c226d58aa9d8a7bcbe4e6c6e0441
-  branch: bug-blank-check
+  revision: d36c0fd4520d9d7346aaaacc74608da74a5aae56
+  branch: lazy-load-html
   specs:
     aperitiiif (0.1.2)
       colorize
