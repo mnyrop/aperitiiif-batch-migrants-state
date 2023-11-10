@@ -1,7 +1,7 @@
 # batch config
 
-label:          'A-Files – Test Data'
-description:    'NARA A-Files for Migrants and the State'
+label:          'A-Files'
+description:    'NARA A-Files for Migrants and the State Project'
 attribution:    ''
 
 presentation_api_url: 'https://aperitiiif-presentation-api-store.s3.us-east-1.amazonaws.com'
