@@ -12,4 +12,4 @@ TO DO
 - [@mnrop](https://github.com/mnyrop)
 
 ## Notes
-- Run csv initialization creation script with `bundle exec ruby lib/create-csv.rb`
+- Run csv initialization & pdf splitting script with `bundle exec ruby lib/split-pdfs-populate-csv.rb`
