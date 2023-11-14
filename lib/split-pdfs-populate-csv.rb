@@ -1,6 +1,5 @@
 require 'fileutils'
 require 'pdf-reader'
-# require 'ruby-progressbar'
 require 'vips'
 
 csv_file    = './src/records.csv'

@@ -1,19 +1,10 @@
 .DS_Store
+.env
 tmp
 
-# build/image/migrants-state_A*0.tif
-# build/image/migrants-state_A*1.tif
-# build/image/migrants-state_A*2.tif
-# build/image/migrants-state_A*3.tif
-# build/image/migrants-state_A*4.tif
-# build/image/migrants-state_A*5.tif
-# build/image/migrants-state_A*6.tif
-# build/image/migrants-state_A*7.tif
-# build/image/migrants-state_A*8.tif
-# build/image/migrants-state_A*9.tif
+build/image
 
 aperitiiif
 aperitiiif-cli
 
-src/pdfs/
 source
